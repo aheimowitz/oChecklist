@@ -1,1 +1,1 @@
-public interface Bookstore implements Activity{}
+public abstract class Bookstore implements Activity{}

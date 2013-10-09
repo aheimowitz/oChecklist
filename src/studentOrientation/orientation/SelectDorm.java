@@ -1,1 +1,1 @@
-public interface SelectDorm implements Activity{}
+public abstract class SelectDorm implements Activity{}

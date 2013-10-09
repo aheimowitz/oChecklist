@@ -1,0 +1,12 @@
+public class ActivityBuilder
+{
+	
+	public void construct()
+	{
+		ActivityWorkshop aWork = new ActivityWorkshop();
+
+		Bookstore man = new Mandos();
+
+		aWork.construct(Mandos);	
+	}
+}
