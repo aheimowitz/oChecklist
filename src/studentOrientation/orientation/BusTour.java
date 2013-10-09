@@ -1,4 +1,4 @@
-public class BusTour implements CampusTour
+public class BusTour extends CampusTour
 {
 
 	//Constructor class sets values for the option
