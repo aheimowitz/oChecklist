@@ -1,4 +1,4 @@
-public class MandoBooks implements Bookstore
+public class MandoBooks extends Bookstore
 {
 
 	//Constructor class sets values for the option

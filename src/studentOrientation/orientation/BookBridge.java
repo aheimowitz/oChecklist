@@ -1,4 +1,4 @@
-public class BookBridge implements Bookstore
+public class BookBridge extends Bookstore
 {
 
 	//Constructor class sets values for the option

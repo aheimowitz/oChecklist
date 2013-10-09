@@ -1,4 +1,4 @@
-public class OnlineGaming implements SelectDorm
+public class OnlineGaming extends SelectDorm
 {
 
 	//Constructor class sets values for the option

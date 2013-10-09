@@ -1,4 +1,4 @@
-public class UnivBookstore implements Bookstore
+public class UnivBookstore extends Bookstore
 {
 
 	//Constructor class sets values for the option

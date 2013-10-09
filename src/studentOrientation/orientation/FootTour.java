@@ -1,4 +1,4 @@
-public class FootTour implements CampusTour
+public class FootTour extends CampusTour
 {
 
 	//Constructor class sets values for the option

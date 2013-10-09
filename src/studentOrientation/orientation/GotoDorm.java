@@ -1,4 +1,4 @@
-public class GotoDorm implements SelectDorm
+public class GotoDorm extends SelectDorm
 {
 
 	//Constructor class sets values for the option
