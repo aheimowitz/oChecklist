@@ -48,7 +48,7 @@
         </jar>
     </target>
   <!-- ...........................................................-->
-  <target name="run" depends="jar">
+<target name="run" depends="jar">
         <java jar="${BUILD}/jar/studentOrientation.jar"  fork="true">
 	  <!-- arg value="dataFile"/-->
           <!-- arg value="1"/-->
