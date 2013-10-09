@@ -1,10 +1,10 @@
-public class UnivBookstore implements Bookstore
+public class BookBridge implements Bookstore
 {
 
 	//Constructor class sets values for the option
-	public UnivBookstore()
+	public BookBridge()
 	{
-		name = "University Bookstore";
+		name = "Book Bridge";
 		/*
 		time = //SET TIME;
 		cost = //SET COST;
