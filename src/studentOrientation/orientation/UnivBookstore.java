@@ -1,4 +1,4 @@
-public class UnivBookstore extends Bookstore
+public class UnivBookstore extends Bookstore 
 {
 
 	//Constructor class sets values for the option
@@ -17,6 +17,7 @@ public class UnivBookstore extends Bookstore
      *
      *	@return Returns the activity's name
      **/
+	@Override
 	public String getName()
 	{
 		return name;

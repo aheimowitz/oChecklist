@@ -1,10 +1,10 @@
 public interface Activity
 {
 	//Activity Variables
-	private int time = 0;
-	private double cost = 0;
-	private int effort = 0;
-	private String name = null;
+	public int time = 0;
+	public double cost = 0;
+	public int effort = 0;
+	public String name = null;
 
 	//Method signature declarations
 	public int getTime();

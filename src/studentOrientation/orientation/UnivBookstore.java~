@@ -1,4 +1,4 @@
-public class UnivBookstore implements Bookstore
+public class UnivBookstore extends Bookstore 
 {
 
 	//Constructor class sets values for the option
@@ -12,13 +12,22 @@ public class UnivBookstore implements Bookstore
 		*/
 	}
 
-	//@return name
+	/**
+     *	This is the getter method for the cost
+     *
+     *	@return Returns the activity's name
+     **/
+	@Override
 	public String getName()
 	{
 		return name;
 	}
 
-	//@return time
+	/**
+     *	This is the getter method for the cost
+     *
+     *	@return Returns the activity's time
+     **/
 	public int getTime()
 	{
 		return time;
@@ -27,7 +36,7 @@ public class UnivBookstore implements Bookstore
 	/**
 	*	This is the getter method for the cost
 	*
-	*	@return Returns the book's cost
+	*	@return Returns the activity's cost
 	**/
 	public double getCost()
 	{
@@ -35,9 +44,8 @@ public class UnivBookstore implements Bookstore
 	}
     
 	/**
-	*	This is the getter met
-	*	 this class.
-	*@return 
+	*	This is the getter method for the effort
+	*@return Return the activity's effort
 	**/
 	public int getEffort()
 	{
@@ -46,13 +54,13 @@ public class UnivBookstore implements Bookstore
 	
 	/**
 	*	This is the overridden toString method for this class
-	*	@return Returns the UnivBookstore class details as a string
+	*	@return Returns the class details as a string
 	**/
 	@Override
 	public String toString() 
 	{
 		return name+"- Time: "+time+" Cost: "+ cost 
-			+" Calories: "+UBeffort;
+			+" Calories: "+effort;
 	}
 }
     
