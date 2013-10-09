@@ -1,3 +1,1 @@
-public interface Bookstore implements Activity
-{
-}
+public interface Bookstore implements Activity{}
