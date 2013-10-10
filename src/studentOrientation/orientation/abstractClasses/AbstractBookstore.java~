@@ -1,0 +1,7 @@
+public abstract class AbstractBookstore implements ActivityInterface
+{
+	private String name;
+	private int time;
+	private double cost;
+	private int effort;
+}

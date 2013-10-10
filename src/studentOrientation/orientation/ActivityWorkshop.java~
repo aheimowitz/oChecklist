@@ -8,7 +8,7 @@ class ActivityWorkshop implements WorkshopInterface
 	/**
 	*	
 	**/
-	public void construct(Activity act)
+	public void construct(ActivityInterface act)
 	{
 		act.setTime();
 		act.setCost();

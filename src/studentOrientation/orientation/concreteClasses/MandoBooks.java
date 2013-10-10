@@ -1,10 +1,14 @@
-public class FootTour extends CampusTour
+public class MandoBooks extends AbstractBookstore
 {
+	private String name;
+	private int time;
+	private double cost;
+	private int effort;
 
 	//Constructor class sets values for the option
-	public FootTour()
+	public MandoBooks()
 	{
-		name = "Campus Foot Tour";
+		//name = "Mando Books";
 		/*
 		time = //SET TIME;
 		cost = //SET COST;
@@ -13,20 +17,19 @@ public class FootTour extends CampusTour
 	}
 
 	/**
-     *	This is the getter method for the cost
-     *
-     *	@return Returns the activity's name
-     **/
+	*	This is the getter method for the cost
+	*
+	*	@return Returns the activity's name
+	**/
 	public String getName()
 	{
 		return name;
 	}
 
 	/**
-     *	This is the getter method for the cost
-     *
-     *	@return Returns the activity's time
-     **/
+	*	This is the getter method for the cost
+	*	@return Returns the activity's time
+	**/
 	public int getTime()
 	{
 		return time;
@@ -34,7 +37,6 @@ public class FootTour extends CampusTour
 
 	/**
 	*	This is the getter method for the cost
-	*
 	*	@return Returns the activity's cost
 	**/
 	public double getCost()
@@ -44,13 +46,26 @@ public class FootTour extends CampusTour
     
 	/**
 	*	This is the getter method for the effort
-	*@return Return the activity's effort
+	*	@return Return the activity's effort
 	**/
 	public int getEffort()
 	{
 		return effort;
 	}
 	
+	public void setTime()
+	{
+
+	}
+	public void setCost()
+	{
+
+	}
+	public void setEffort()
+	{
+	
+	}
+
 	/**
 	*	This is the overridden toString method for this class
 	*	@return Returns the class details as a string
@@ -58,8 +73,8 @@ public class FootTour extends CampusTour
 	@Override
 	public String toString() 
 	{
-		return name+"- Time: "+time+" Cost: "+ cost 
-			+" Calories: "+effort;
+		return "";//name +"- Time: "+time+" Cost: "+ cost 
+			//+" Calories: "+effort;
 	}
 }
     

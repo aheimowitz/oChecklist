@@ -1,0 +1,17 @@
+/*
+ *	This interface defines the basic variables and methods
+ *	 needed for an activity
+ */
+public interface ActivityInterface
+{
+	//Activity Variables
+	public int time = 0;
+	public double cost = 0;
+	public int effort = 0;
+	public String name = null;
+
+	//Method signature declarations
+	public void setTime();
+	public void setCost();
+	public void setEffort();
+}
