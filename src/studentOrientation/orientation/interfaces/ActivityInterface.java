@@ -1,3 +1,6 @@
+//---------------------------------------------------------------------
+package studentOrientation.orientation.interfaces;
+//---------------------------------------------------------------------
 /*
  *	This interface defines the basic variables and methods
  *	 needed for an activity

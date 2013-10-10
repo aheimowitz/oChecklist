@@ -4,11 +4,6 @@
  */
 public interface ActivityInterface
 {
-	private String name;
-	private int time;
-	private double cost;
-	private int effort;
-
 	//Method signature declarations
 	public void setTime();
 	public void setCost();
