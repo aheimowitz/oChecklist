@@ -1,3 +1,8 @@
+//---------------------------------------------------------------------
+package studentOrientation.orientation.concreteClasses;
+//---------------------------------------------------------------------
+import studentOrientation.orientation.abstractClasses.AbstractBookstore;
+//---------------------------------------------------------------------
 public class MandoBooks extends AbstractBookstore
 {
 	private String name;

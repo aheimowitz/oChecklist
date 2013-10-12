@@ -2,7 +2,7 @@
 package studentOrientation.orientation.interfaces;
 //---------------------------------------------------------------------
 /*
- *	This interface defines the basic variables and methods
+ *	This interface defines the basic methods
  *	 needed for an activity
  */
 public interface ActivityInterface
