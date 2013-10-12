@@ -11,14 +11,12 @@ public class MandoBooks extends AbstractBookstore
 	private int effort;
 
 	//Constructor class sets values for the option
-	public MandoBooks()
+	public MandoBooks(String name, int time, double cost, int effort)
 	{
-		//name = "Mando Books";
-		/*
-		time = //SET TIME;
-		cost = //SET COST;
-		effort = //SET EFFORT;
-		*/
+		this.name = name;
+		this.time = time;
+		this.cost = cost;
+		this.effort = effort;
 	}
 
 	/**
@@ -58,17 +56,24 @@ public class MandoBooks extends AbstractBookstore
 		return effort;
 	}
 	
-	public void setTime()
+	public void setName(String name)
 	{
-
+		this.name = name;
 	}
-	public void setCost()
-	{
 
-	}
-	public void setEffort()
+	public void setTime(int time)
 	{
-	
+		this.time = time;
+	}
+
+	public void setCost(double cost)
+	{
+		this.cost = cost;
+	}
+
+	public void setEffort(int effort)
+	{
+		this.effort = effort;
 	}
 
 	/**
@@ -78,8 +83,8 @@ public class MandoBooks extends AbstractBookstore
 	@Override
 	public String toString() 
 	{
-		return "";//name +"- Time: "+time+" Cost: "+ cost 
-			//+" Calories: "+effort;
+		return name +"- Time: "+ time +" Cost: "+ cost 
+			+" Calories: "+effort;
 	}
 }
     

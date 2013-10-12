@@ -8,7 +8,8 @@ package studentOrientation.orientation.interfaces;
 public interface ActivityInterface
 {
 	//Method signature declarations
-	public void setTime();
-	public void setCost();
-	public void setEffort();
+	public String getName();
+	public int getTime();
+	public double getCost();
+	public void getEffort();
 }
