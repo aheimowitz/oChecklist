@@ -1,4 +1,9 @@
 //---------------------------------------------------------------------
-package studentOrientation.orientation.abstractClasses;
+package studentOrientation.orientation.interfaces;
 //---------------------------------------------------------------------
-public abstract class AbstractBookstore implements ActivityInterface{}
+public interface UnitsInterface
+{
+	public void setUnits();
+	public void getUnits();
+
+}
