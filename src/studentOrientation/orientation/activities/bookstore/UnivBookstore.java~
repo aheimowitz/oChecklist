@@ -12,7 +12,7 @@ public class UnivBookstore extends AbstractBookstore
 		this.time = 8;
 		this.effort = 97;
 
-		calculate("0.00");
+		calculate(0.00);
 	}
 	
 	/**

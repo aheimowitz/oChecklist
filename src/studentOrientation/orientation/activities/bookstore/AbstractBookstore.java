@@ -13,7 +13,8 @@ public abstract class AbstractBookstore implements ActivityInterface
 	int effort;
 
 	/**
-	*
+	*	This method is used to calculate the cost
+	*	 for each bookstore based off of a percent value.
 	**/
 	public void calculate(Double percent)
 	{

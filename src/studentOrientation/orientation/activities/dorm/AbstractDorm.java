@@ -12,13 +12,11 @@ public abstract class AbstractDorm implements ActivityInterface
 	int effort;
 	
 	/**
-	*	This method reads in a string percentage with a %
-	*	character terminating, and assigns a proper to cost
-	*	by calculating the cost based on the percentage.
+	*
 	**/
-	public void calculate(String percent)
+	public void calculate(Double percent)
 	{
-
+		cost = DORMCOST + (DORMCOST*(percent/100));
 	}
 
 	/**

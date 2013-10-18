@@ -6,12 +6,9 @@ public class GotoDorm extends AbstractDorm
 	//Constructor class sets values for the option
 	public GotoDorm()
 	{
-		name = "Go to each dorm on foot";
-		/*
-		time = //SET TIME;
-		cost = //SET COST;
-		effort = //SET EFFORT;
-		*/
+		name = "Go to each dorm";
+		time = 40;
+		effort = 1203;
 	}
 
 	/**

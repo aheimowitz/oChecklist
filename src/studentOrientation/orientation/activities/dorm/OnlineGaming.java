@@ -8,11 +8,11 @@ public class OnlineGaming extends AbstractDorm
 	public OnlineGaming()
 	{
 		name = "Online Gaming Contest";
-		/*
-		time = //SET TIME;
-		cost = //SET COST;
-		effort = //SET EFFORT;
-		*/
+		time = 20;
+		effort = 5;
+	
+		calculate(5.00);
+
 	}
 
 	/**
