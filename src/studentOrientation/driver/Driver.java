@@ -12,10 +12,13 @@ import java.util.Vector;
 //---------------------------------------------------------------------
 public class Driver 
 {
+    /**
+     * Main method creates a vector of objects and sends them to the builder
+     **/
 	public static void main(String args[]) 
 	{
         int debug = Integer.parseInt(args[0]);
-        if(debug >-1 && debug <3){
+        if(debug >-1 && debug <5){
             
             ActivityBuilder build = new ActivityBuilder(debug);
             Vector<ActivityInterface> checkList = new Vector<ActivityInterface>();
