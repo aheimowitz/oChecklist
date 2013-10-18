@@ -3,14 +3,19 @@ package studentOrientation.orientation.activities.tour;
 //---------------------------------------------------------------------
 public class FootTour extends AbstractTour
 {
-
 	//Constructor class sets values for the option
-	public FootTour()
+	public FootTour(int debugVal)
 	{
 		name = "Walking tour";
 		time = 25;
 		cost = 1.00;
 		effort = 100;
+
+		if(debugVal == 2)
+		{
+			System.out.println(name +
+				" constructor called");
+		}
 
 	}
 

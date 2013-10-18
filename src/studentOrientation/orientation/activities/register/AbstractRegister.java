@@ -5,7 +5,7 @@ import studentOrientation.orientation.interfaces.ActivityInterface;
 //---------------------------------------------------------------------
 public abstract class AbstractRegister implements ActivityInterface
 {
-	static private final double RVALUE = 200;
+	static private final double TUITION = 7256;
 	String name;
 	int time;
 	double cost;
@@ -14,9 +14,9 @@ public abstract class AbstractRegister implements ActivityInterface
 	/**
 	*
 	**/
-	public void calculate(String percent)
+	public void calculate(Double percent)
 	{
-
+		cost = TUITION - (TUITION*(percent/100));
 	}
 
 	/**

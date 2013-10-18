@@ -6,13 +6,21 @@ public class MandoBooks extends AbstractBookstore
 	/**
 	*	Class constructor
 	**/
-	public MandoBooks(String name, int time, String costPercentage, int effort)
+	public MandoBooks(int debugVal)
 	{
 		this.name = "Mando Books";
 		this.time = 15;
 		this.effort = 165;
 
 		calculate(3.00);
+
+		if(debugVal == 2)
+		{
+			System.out.println(name +
+				" constructor called");
+		}
+
+
 	}
 
 	/**

@@ -1,23 +1,24 @@
 //---------------------------------------------------------------------
-package studentOrientation.orientation.activities.dorm;
+package studentOrientation.orientation.activities.register;
 //---------------------------------------------------------------------
-public class OnlineGaming extends AbstractDorm
+public class ComputerReg extends AbstractRegister
 {
-	//Constructor class sets values for the option
-	public OnlineGaming(int debugVal)
+	/**
+	*	The empty class constructor
+	**/
+	public ComputerReg(int debugVal)
 	{
-		name = "Online Gaming Contest";
-		time = 20;
-		effort = 5;
-	
-		calculate(5.00);
+		name = "Register by computer";
+		time = 1;
+		effort = 2;
+
+		calculate(0.00);
 
 		if(debugVal == 2)
 		{
 			System.out.println(name +
 				" constructor called");
 		}
-
 	}
 
 	/**
@@ -30,5 +31,5 @@ public class OnlineGaming extends AbstractDorm
 		return name+"- Time: "+time+" Cost: "+ cost 
 			+" Calories: "+effort;
 	}
+
 }
-    
