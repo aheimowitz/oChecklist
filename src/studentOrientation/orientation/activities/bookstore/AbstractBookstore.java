@@ -2,6 +2,7 @@
 package studentOrientation.orientation.activities.bookstore;
 //---------------------------------------------------------------------
 import studentOrientation.orientation.interfaces.ActivityInterface;
+import studentOrientation.util.cost.AbstractCost;
 //---------------------------------------------------------------------
 public abstract class AbstractBookstore implements ActivityInterface
 {
@@ -22,6 +23,11 @@ public abstract class AbstractBookstore implements ActivityInterface
 		//Multiply BVALUE times the percentage
 		//Subtract the multiplication above from BVALUE
 		// and set cost to that value.
+
+		double percent = 
+			(Double.parseDouble(percent) / 100);	
+		cost = BVALUE - (BVALUE*percent); 				
+
 	}
 
 	/**
