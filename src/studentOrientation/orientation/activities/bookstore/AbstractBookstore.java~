@@ -25,8 +25,7 @@ public abstract class AbstractBookstore implements ActivityInterface
 	}
 
 	/**
-	*	This is the getter method for the cost
-	*
+	*	This is the getter method for the name
 	*	@return Returns the activity's name
 	**/
 	public String getName()
@@ -35,7 +34,7 @@ public abstract class AbstractBookstore implements ActivityInterface
 	}
 
 	/**
-	*	This is the getter method for the cost
+	*	This is the getter method for the time
 	*	@return Returns the activity's time
 	**/
 	public int getTime()
@@ -61,21 +60,37 @@ public abstract class AbstractBookstore implements ActivityInterface
 		return effort;
 	}
 	
+	/**
+	*	This is the setter method for the name 
+	*	 of the activity
+	**/
 	public void setName(String name)
 	{
 		this.name = name;
 	}
 
+	/**
+	*	This is the setter method for the time 
+	*	 of the activity
+	**/
 	public void setTime(int time)
 	{
 		this.time = time;
 	}
 
+	/**
+	*	This is the setter method for the cost
+	*	 of the activity
+	**/
 	public void setCost(double cost)
 	{
 		this.cost = cost;
 	}
 
+	/**
+	*	This is the setter method for the effort
+	*	 of the activity
+	**/
 	public void setEffort(int effort)
 	{
 		this.effort = effort;
