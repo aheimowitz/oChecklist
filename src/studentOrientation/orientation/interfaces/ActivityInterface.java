@@ -17,6 +17,4 @@ public interface ActivityInterface
 	public void setTime(int time);
 	public void setCost (double cost);
 	public void setEffort(int effort);
-	
-	public void calculate(Double percent);
 }

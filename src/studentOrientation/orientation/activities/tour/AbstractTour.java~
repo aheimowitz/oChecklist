@@ -5,19 +5,11 @@ import studentOrientation.orientation.interfaces.ActivityInterface;
 //---------------------------------------------------------------------
 public abstract class AbstractTour implements ActivityInterface
 {
-	static private final double TVALUE = 200;
+	static private final double TOURCOST = 200;
 	String name;
 	int time;
 	double cost;
 	int effort;
-
-	/**
-	*
-	**/
-	public void calculate(String percent)
-	{
-
-	}
 
 	/**
 	*	This is the getter method for the name

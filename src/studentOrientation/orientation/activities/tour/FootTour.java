@@ -7,6 +7,10 @@ public class FootTour extends AbstractTour
 	//Constructor class sets values for the option
 	public FootTour()
 	{
+		name = "Walking tour";
+		time = 25;
+		cost = 1.00;
+		effort = 100;
 
 	}
 

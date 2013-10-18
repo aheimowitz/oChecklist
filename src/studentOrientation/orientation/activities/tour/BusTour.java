@@ -7,7 +7,10 @@ public class BusTour extends AbstractTour
 	//Constructor class sets values for the option
 	public BusTour()
 	{
-
+		name = "Bus Tour";
+		time = 1;
+		cost = 5.00;
+		effort = 25;
 	}
 	
 	/**

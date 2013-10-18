@@ -9,6 +9,8 @@ public class GotoDorm extends AbstractDorm
 		name = "Go to each dorm";
 		time = 40;
 		effort = 1203;
+
+		calculate(0.00);
 	}
 
 	/**
