@@ -2,6 +2,9 @@
 package studentOrientation.orientation.activities.dorm;
 //---------------------------------------------------------------------
 import studentOrientation.orientation.interfaces.ActivityInterface;
+import studentOrientation.util.cost.*;
+import studentOrientation.util.effort.*;
+import studentOrientation.util.time.*;
 //---------------------------------------------------------------------
 public abstract class AbstractDorm implements ActivityInterface
 {
@@ -11,12 +14,16 @@ public abstract class AbstractDorm implements ActivityInterface
 	double cost;
 	int effort;
 	
+	UnitsInterface timeUnits;
+	UnitsInterface costUnits;
+	UnitsInterface effortUnits;
+	
 	/**
 	*
 	**/
-	public void calculate(String percent)
+	public void calculate(Double percent)
 	{
-
+		cost = DORMCOST + (DORMCOST*(percent/100));
 	}
 
 	/**

@@ -2,7 +2,10 @@
 package studentOrientation.orientation.activities.bookstore;
 //---------------------------------------------------------------------
 import studentOrientation.orientation.interfaces.ActivityInterface;
-import studentOrientation.util.cost.AbstractCost;
+import studentOrientation.orientation.interfaces.UnitsInterface;
+import studentOrientation.util.cost.*;
+import studentOrientation.util.effort.*;
+import studentOrientation.util.time.*;
 //---------------------------------------------------------------------
 public abstract class AbstractBookstore implements ActivityInterface
 {
@@ -11,6 +14,10 @@ public abstract class AbstractBookstore implements ActivityInterface
 	int time;
 	double cost;
 	int effort;
+
+	UnitsInterface timeUnits;
+	UnitsInterface costUnits;
+	UnitsInterface effortUnits;
 
 	/**
 	*	This method is used to calculate the cost

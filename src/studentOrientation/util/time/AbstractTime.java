@@ -7,7 +7,7 @@ public abstract class AbstractTime implements UnitsInterface
 {
 	String text;
 
-	public String getText()
+	public String toText()
 	{
 		return text;
 	}

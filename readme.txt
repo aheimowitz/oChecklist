@@ -3,6 +3,17 @@ Design Patterns, Assignment #2
 Team members: Adam Heimowitz, Michael Welte
 ========================================================================
 
+Compilation and running:
+========================================================================
+To compile this, navigate to the parent directory and run
+"ant compile" in the terminal.
+
+Modify the build.xml file at the bottom in the "arg value" tag to change
+the debug value if you wish (see below for debug value details)
+and then to run, run "ant run" in the terminal.
+
+========================================================================
+
 Debug Values:
 ========================================================================
 Our program uses the following debug value scheme
@@ -29,14 +40,22 @@ So for example:
 	The bookstore "Mando's Bookstore" extends the AbstractBookstore 
 	class, which implements the interface ActivityInterface.
 
-
+We decided to use the builder pattern because we are creating objects
+and the order does not matter.
 
 ========================================================================
 
 Contributions:
 ========================================================================
 Adam Heimowitz:
+	-Builder class
+	-Driver class
 
 Michael Welte:
-
+	-Interfaces
+	-Abstract classes
+	-Activities concrete classes
+	-Build.xml modifications
+	-Readme
+	
 ========================================================================

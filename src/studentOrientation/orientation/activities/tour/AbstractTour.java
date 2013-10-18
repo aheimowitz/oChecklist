@@ -2,6 +2,10 @@
 package studentOrientation.orientation.activities.tour;
 //---------------------------------------------------------------------
 import studentOrientation.orientation.interfaces.ActivityInterface;
+import studentOrientation.orientation.interfaces.UnitsInterface;
+import studentOrientation.util.cost.*;
+import studentOrientation.util.effort.*;
+import studentOrientation.util.time.*;
 //---------------------------------------------------------------------
 public abstract class AbstractTour implements ActivityInterface
 {
@@ -9,6 +13,10 @@ public abstract class AbstractTour implements ActivityInterface
 	int time;
 	double cost;
 	int effort;
+
+	UnitsInterface timeUnits;
+	UnitsInterface costUnits;
+	UnitsInterface effortUnits;
 
 	/**
 	*	This is the getter method for the name

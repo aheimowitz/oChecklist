@@ -2,6 +2,9 @@
 package studentOrientation.orientation.activities.register;
 //---------------------------------------------------------------------
 import studentOrientation.orientation.interfaces.ActivityInterface;
+import studentOrientation.util.cost.*;
+import studentOrientation.util.effort.*;
+import studentOrientation.util.time.*;
 //---------------------------------------------------------------------
 public abstract class AbstractRegister implements ActivityInterface
 {
@@ -10,6 +13,10 @@ public abstract class AbstractRegister implements ActivityInterface
 	int time;
 	double cost;
 	int effort;
+
+	UnitsInterface timeUnits;
+	UnitsInterface costUnits;
+	UnitsInterface effortUnits;
 
 	/**
 	*

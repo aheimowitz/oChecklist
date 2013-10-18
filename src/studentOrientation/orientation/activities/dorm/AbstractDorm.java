@@ -2,6 +2,10 @@
 package studentOrientation.orientation.activities.dorm;
 //---------------------------------------------------------------------
 import studentOrientation.orientation.interfaces.ActivityInterface;
+import studentOrientation.orientation.interfaces.UnitsInterface;
+import studentOrientation.util.cost.*;
+import studentOrientation.util.effort.*;
+import studentOrientation.util.time.*;
 //---------------------------------------------------------------------
 public abstract class AbstractDorm implements ActivityInterface
 {
@@ -10,6 +14,10 @@ public abstract class AbstractDorm implements ActivityInterface
 	int time;
 	double cost;
 	int effort;
+	
+	UnitsInterface timeUnits;
+	UnitsInterface costUnits;
+	UnitsInterface effortUnits;
 	
 	/**
 	*
