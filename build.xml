@@ -50,13 +50,8 @@
   <!-- ...........................................................-->
   <target name="run" depends="jar">
         <java jar="${BUILD}/jar/studentOrientation.jar"  fork="true">
-	  <!-- arg value="dataFile"/-->
-          <!-- arg value="1"/-->
-	  <!-- arg value="searchFile"/-->
-          <!-- arg value="1" -->
-          <!-- arg value="2"/ -->
-
-	 </java>
+          <arg value="1"/>
+        </java>
 	
     </target>
   <!-- ...........................................................-->
