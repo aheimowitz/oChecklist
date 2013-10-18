@@ -1,4 +1,7 @@
-public class Dollars extends Cost
+//---------------------------------------------------------------------
+package studentOrientation.util.cost;
+//---------------------------------------------------------------------
+public class Dollars extends AbstractCost
 {
 	public Dollars()
 	{

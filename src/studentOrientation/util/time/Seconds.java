@@ -1,6 +1,9 @@
-public class Seconds extends Time
+//---------------------------------------------------------------------
+package studentOrientation.util.time;
+//--------------------------------------------------------------------
+public class Seconds extends AbstractTime
 {
-	public Seconds
+	public Seconds()
 	{
 		text = "Seconds";
 	}

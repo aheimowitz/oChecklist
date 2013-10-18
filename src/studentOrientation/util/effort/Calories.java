@@ -1,4 +1,7 @@
-public class Calories extends Effort
+//---------------------------------------------------------------------
+package studentOrientation.util.effort;
+//--------------------------------------------------------------------
+public class Calories extends AbstractEffort
 {
 	public Calories()
 	{

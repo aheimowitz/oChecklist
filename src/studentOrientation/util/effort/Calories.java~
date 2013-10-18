@@ -1,0 +1,10 @@
+//---------------------------------------------------------------------
+package studentOrientation.util.cost;
+//--------------------------------------------------------------------
+public class Calories extends AbstractEffort
+{
+	public Calories()
+	{
+		text = "Calories";
+	}
+}

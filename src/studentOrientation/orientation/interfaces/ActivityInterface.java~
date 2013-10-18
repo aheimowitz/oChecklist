@@ -3,7 +3,7 @@ package studentOrientation.orientation.interfaces;
 //---------------------------------------------------------------------
 /*
  *	This interface defines the basic methods
- *	 needed for an activity
+ *	 needed for an activity to exist
  */
 public interface ActivityInterface
 {

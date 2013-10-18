@@ -1,8 +1,11 @@
-public class Euros extends Cost
+//---------------------------------------------------------------------
+package studentOrientation.util.cost;
+//--------------------------------------------------------------------
+public class Euros extends AbstractCost
 {
 	public Euros()
 	{
-		unitChar = '';
+		unitChar = 'e';
 		text = "Euros";
 
 	}

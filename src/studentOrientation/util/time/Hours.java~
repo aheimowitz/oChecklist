@@ -1,0 +1,10 @@
+//---------------------------------------------------------------------
+package studentOrientation.util.cost;
+//--------------------------------------------------------------------
+public class Hours extends AbstractTime
+{
+	public Hours()
+	{
+		text = "Hours";
+	}
+}

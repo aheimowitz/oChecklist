@@ -1,4 +1,7 @@
-public class Minutes extends Time
+//---------------------------------------------------------------------
+package studentOrientation.util.time;
+//--------------------------------------------------------------------
+public class Minutes extends AbstractTime
 {
 	public Minutes()
 	{

@@ -1,0 +1,7 @@
+public class Minutes extends AbstractTime
+{
+	public Minutes()
+	{
+		text = "Minutes";
+	}
+}
