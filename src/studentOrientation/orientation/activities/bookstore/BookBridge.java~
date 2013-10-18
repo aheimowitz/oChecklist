@@ -12,7 +12,13 @@ public class BookBridge extends AbstractBookstore
 		this.time = 20;
 		this.effort = 200;
 
-		calculate("2.00");
+		calculate(2.00);
+
+		if(debugVal == 2)
+		{
+			System.out.println(name +
+				" constructor called");
+		}
 	}
 
 	/**

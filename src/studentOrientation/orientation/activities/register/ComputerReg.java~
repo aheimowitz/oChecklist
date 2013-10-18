@@ -13,6 +13,12 @@ public class ComputerReg extends AbstractRegister
 		effort = 2;
 
 		calculate(0.00);
+
+		if(debugVal == 2)
+		{
+			System.out.println(name +
+				" constructor called");
+		}
 	}
 
 	/**

@@ -6,13 +6,19 @@ public class BookBridge extends AbstractBookstore
 	/**
 	*	Class constructor
 	**/
-	public BookBridge()
+	public BookBridge(int debugVal)
 	{
 		this.name = "Book Bridge";
 		this.time = 20;
 		this.effort = 200;
 
 		calculate(2.00);
+
+		if(debugVal == 2)
+		{
+			System.out.println(name +
+				" constructor called");
+		}
 	}
 
 	/**

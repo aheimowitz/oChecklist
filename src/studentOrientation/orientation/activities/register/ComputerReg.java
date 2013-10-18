@@ -6,13 +6,19 @@ public class ComputerReg extends AbstractRegister
 	/**
 	*	The empty class constructor
 	**/
-	public ComputerReg()
+	public ComputerReg(int debugVal)
 	{
 		name = "Register by computer";
 		time = 1;
 		effort = 2;
 
 		calculate(0.00);
+
+		if(debugVal == 2)
+		{
+			System.out.println(name +
+				" constructor called");
+		}
 	}
 
 	/**

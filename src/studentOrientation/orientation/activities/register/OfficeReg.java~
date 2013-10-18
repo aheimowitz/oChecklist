@@ -4,7 +4,7 @@ package studentOrientation.orientation.activities.register;
 public class OfficeReg extends AbstractRegister
 {
 	/**
-	*	This is the class constructor
+	*	The empty class constructor
 	**/
 	public OfficeReg()
 	{
@@ -13,6 +13,12 @@ public class OfficeReg extends AbstractRegister
 		effort = 100;
 
 		calculate(3.00);
+
+		if(debugVal == 2)
+		{
+			System.out.println(name +
+				" constructor called");
+		}
 	}
 
 	/**

@@ -6,13 +6,19 @@ public class OfficeReg extends AbstractRegister
 	/**
 	*	The empty class constructor
 	**/
-	public OfficeReg()
+	public OfficeReg(int debugVal)
 	{
 		name = "Register in the office";
 		time = 2;
 		effort = 100;
 
 		calculate(3.00);
+
+		if(debugVal == 2)
+		{
+			System.out.println(name +
+				" constructor called");
+		}
 	}
 
 	/**

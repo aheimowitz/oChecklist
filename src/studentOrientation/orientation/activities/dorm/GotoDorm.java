@@ -4,13 +4,19 @@ package studentOrientation.orientation.activities.dorm;
 public class GotoDorm extends AbstractDorm
 {
 	//Constructor class sets values for the option
-	public GotoDorm()
+	public GotoDorm(int debugVal)
 	{
 		name = "Go to each dorm";
 		time = 40;
 		effort = 1203;
 
 		calculate(0.00);
+
+		if(debugVal == 2)
+		{
+			System.out.println(name +
+				" constructor called");
+		}
 	}
 
 	/**

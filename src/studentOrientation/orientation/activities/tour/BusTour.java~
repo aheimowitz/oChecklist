@@ -5,12 +5,18 @@ public class BusTour extends AbstractTour
 {
 
 	//Constructor class sets values for the option
-	public BusTour()
+	public BusTour(int debugVal)
 	{
 		name = "Bus Tour";
 		time = 1;
 		cost = 5.00;
 		effort = 25;
+
+		if(debugVal == 2)
+		{
+			System.out.println(name +
+				" constructor called");
+		}
 	}
 	
 	/**

@@ -6,13 +6,19 @@ public class UnivBookstore extends AbstractBookstore
 	/**
 	*	Class constructor
 	**/
-	public UnivBookstore()
+	public UnivBookstore(int debugVal)
 	{
 		this.name = "University Bookstore";
 		this.time = 8;
 		this.effort = 97;
 
 		calculate(0.00);
+
+		if(debugVal == 2)
+		{
+			System.out.println(name +
+				" constructor called");
+		}
 	}
 	
 	/**
@@ -26,4 +32,4 @@ public class UnivBookstore extends AbstractBookstore
 			+" Calories: "+effort;
 	}
 }
-    
+//---------------------------------------------------------------------    

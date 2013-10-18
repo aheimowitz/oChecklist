@@ -3,15 +3,20 @@ package studentOrientation.orientation.activities.dorm;
 //---------------------------------------------------------------------
 public class OnlineGaming extends AbstractDorm
 {
-
 	//Constructor class sets values for the option
-	public OnlineGaming()
+	public OnlineGaming(int debugVal)
 	{
 		name = "Online Gaming Contest";
-		time = 
-		effort = 
+		time = 20;
+		effort = 5;
 	
 		calculate(5.00);
+
+		if(debugVal == 2)
+		{
+			System.out.println(name +
+				" constructor called");
+		}
 
 	}
 
