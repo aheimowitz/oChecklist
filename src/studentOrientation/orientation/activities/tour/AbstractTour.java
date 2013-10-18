@@ -5,7 +5,6 @@ import studentOrientation.orientation.interfaces.ActivityInterface;
 //---------------------------------------------------------------------
 public abstract class AbstractTour implements ActivityInterface
 {
-	static private final double TOURCOST = 200;
 	String name;
 	int time;
 	double cost;
