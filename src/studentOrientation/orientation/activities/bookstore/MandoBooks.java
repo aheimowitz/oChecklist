@@ -1,18 +1,25 @@
 //---------------------------------------------------------------------
 package studentOrientation.orientation.activities.bookstore;
 //---------------------------------------------------------------------
+import studentOrientation.orientation.interfaces.UnitsInterface;
+//--------------------------------------------------------------------
 public class MandoBooks extends AbstractBookstore
 {
 	/**
 	*	Class constructor
 	**/
-	public MandoBooks(int debugVal)
+	public MandoBooks(int debugVal, UnitsInterface timeUnits,
+	 UnitsInterface effortUnits, UnitsInterface costUnits)
 	{
 		this.name = "Mando Books";
 		this.time = 15;
 		this.effort = 165;
 
 		calculate(3.00);
+
+		this.timeUnits = timeUnits;
+		this.effortUnits = effortUnits;
+		this.costUnits = costUnits;
 
 		if(debugVal == 2)
 		{
@@ -30,8 +37,9 @@ public class MandoBooks extends AbstractBookstore
 	@Override
 	public String toString() 
 	{
-		return name +"- Time: "+ time +" Cost: "+ cost 
-			+" Calories: "+effort;
+		return name + "- Time: " + time + " " + timeUnits.toText()
+			+ " Cost: " + cost + " " + costUnits.toText()  
+			+" Calories: "+ effort + effortUnits.toText();
 	}
 }
     

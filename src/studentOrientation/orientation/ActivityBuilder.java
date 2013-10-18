@@ -3,6 +3,7 @@ package studentOrientation.orientation;
 //---------------------------------------------------------------------
 import studentOrientation.orientation.interfaces.WorkshopInterface;
 import studentOrientation.orientation.interfaces.ActivityInterface;
+import studentOrientation.orientation.interfaces.UnitsInterface;
 import studentOrientation.orientation.activities.bookstore.*;
 import studentOrientation.orientation.activities.dorm.*;
 import studentOrientation.orientation.activities.register.*;
@@ -15,16 +16,33 @@ public class ActivityBuilder implements WorkshopInterface
     private double totalCost;
     private int totalEffort;
     private int debugger;
+
+	UnitsInterface timeUnits;
+	UnitsInterface effortUnits;
+	UnitsInterface costUnits;
     
     /**
      * Constructor takes in debug value and initalizes everything to 0
      **/
-	public ActivityBuilder(int debug){
-        totalTime = 0;
-        totalCost = 0;
-        totalEffort = 0;
-        debugger = debug;
-    }
+	public ActivityBuilder(int debug, UnitsInterface timeUnits,
+		 UnitsInterface effortUnits, UnitsInterface costUnits)
+	{
+		totalTime = 0;
+		totalCost = 0;
+		totalEffort = 0;
+		debugger = debug;
+
+		this.timeUnits = timeUnits;
+		this.effortUnits = effortUnits;
+		this.costUnits = costUnits;
+        
+        if(debug == 3)
+		{
+			System.out.println(name +
+                               " Builder called");
+		}
+		
+    	}
     
     /*
      * Construct calculates the total time, effort. and cost
@@ -45,6 +63,8 @@ public class ActivityBuilder implements WorkshopInterface
     @Override
     public String toString()
     {
-        return "Total Time: "+totalTime+" Total Cost: "+totalCost+" Total Effort: "+totalEffort;
+        return "Total Time: "+ totalTime + " " + timeUnits.toText()
+	 + "\nTotal Cost: "+ totalCost + " " + costUnits.toText() 
+	 + "\nTotal Effort: " + totalEffort + " " + effortUnits.toText();
     }
 }

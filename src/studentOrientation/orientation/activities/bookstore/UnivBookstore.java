@@ -1,18 +1,25 @@
 //---------------------------------------------------------------------
 package studentOrientation.orientation.activities.bookstore;
 //---------------------------------------------------------------------
+import studentOrientation.orientation.interfaces.UnitsInterface;
+//--------------------------------------------------------------------
 public class UnivBookstore extends AbstractBookstore
 {
 	/**
 	*	Class constructor
 	**/
-	public UnivBookstore(int debugVal)
+	public UnivBookstore(int debugVal, UnitsInterface timeUnits,
+	 UnitsInterface effortUnits, UnitsInterface costUnits)
 	{
 		this.name = "University Bookstore";
 		this.time = 8;
 		this.effort = 97;
-
+	
 		calculate(0.00);
+
+		this.timeUnits = timeUnits;
+		this.effortUnits = effortUnits;
+		this.costUnits = costUnits;
 
 		if(debugVal == 2)
 		{
@@ -28,8 +35,9 @@ public class UnivBookstore extends AbstractBookstore
 	@Override
 	public String toString() 
 	{
-		return name+"- Time: "+time+" Cost: "+ cost 
-			+" Calories: "+effort;
+		return name + "- Time: " + time + " " + timeUnits.toText()
+			+ " Cost: " + cost + " " + costUnits.toText()  
+			+" Calories: "+ effort + effortUnits.toText();
 	}
 }
 //---------------------------------------------------------------------    

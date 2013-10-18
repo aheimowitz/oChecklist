@@ -9,11 +9,11 @@ public abstract class AbstractCost implements UnitsInterface
 	Character unitChar;
 	String text;
 
-	public Character getChar()
+	public Character toChar()
 	{
 		return unitChar;
 	}
-	public String getText()
+	public String toText()
 	{
 		return text;
 	}
