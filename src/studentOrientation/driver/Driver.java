@@ -14,7 +14,7 @@ public class Driver
 {
 	public static void main(String args[]) 
 	{
-        int debug = Integer.parseInt(args[1]);
+        int debug = Integer.parseInt(args[0]);
         if(debug >-1 && debug <3){
             
             ActivityBuilder build = new ActivityBuilder(debug);

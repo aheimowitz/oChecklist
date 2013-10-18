@@ -16,6 +16,9 @@ public class ActivityBuilder implements WorkshopInterface
     private int totalEffort;
     private int debugger;
     
+    /**
+     * Constructor takes in debug value and initalizes everything to 0
+     **/
 	public ActivityBuilder(int debug){
         totalTime = 0;
         totalCost = 0;
@@ -23,6 +26,9 @@ public class ActivityBuilder implements WorkshopInterface
         debugger = debug;
     }
     
+    /*
+     * Construct calculates the total time, effort. and cost
+     **/
 	public void construct(Vector<ActivityInterface> checkList)
 	{
         for (int i = 0; i < checkList.size(); i++){
@@ -32,6 +38,10 @@ public class ActivityBuilder implements WorkshopInterface
         }
 	}
     
+    /**
+     *	This is the overridden toString method for this class
+     *	@return Returns the class details as a string
+     **/
     @Override
     public String toString()
     {
