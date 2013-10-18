@@ -8,9 +8,11 @@ public class BookBridge extends AbstractBookstore
 	**/
 	public BookBridge()
 	{
-		this.name = name;
-		this.time = time;
-		this.effort = effort;
+		this.name = "Book Bridge";
+		this.time = 20;
+		this.effort = 200;
+
+		calculate(2.00);
 	}
 
 	/**

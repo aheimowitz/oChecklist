@@ -8,9 +8,11 @@ public class MandoBooks extends AbstractBookstore
 	**/
 	public MandoBooks(String name, int time, String costPercentage, int effort)
 	{
-		this.name = name;
-		this.time = time;
-		this.effort = effort;
+		this.name = "Mando Books";
+		this.time = 15;
+		this.effort = 165;
+
+		calculate("3.00");
 	}
 
 	/**

@@ -8,9 +8,11 @@ public class UnivBookstore extends AbstractBookstore
 	**/
 	public UnivBookstore()
 	{
-		this.name = name;
-		this.time = time;
-		this.effort = effort;
+		this.name = "University Bookstore";
+		this.time = 8;
+		this.effort = 97;
+
+		calculate(0.00);
 	}
 	
 	/**

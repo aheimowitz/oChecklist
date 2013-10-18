@@ -13,21 +13,11 @@ public abstract class AbstractBookstore implements ActivityInterface
 	int effort;
 
 	/**
-	*	This method reads in a string percentage with a %
-	*	character terminating, and assigns a proper to cost
-	*	by calculating the cost based on the percentage.
+	*
 	**/
 	public void calculate(String percent)
 	{
-		//Parse the percent and extract the #
-		//Multiply BVALUE times the percentage
-		//Subtract the multiplication above from BVALUE
-		// and set cost to that value.
-
-		double percent = 
-			(Double.parseDouble(percent) / 100);	
-		cost = BVALUE - (BVALUE*percent); 				
-
+		cost = BVALUE - (BVALUE*(percent/100)); 			
 	}
 
 	/**
