@@ -11,5 +11,10 @@ public interface ActivityInterface
 	public String getName();
 	public int getTime();
 	public double getCost();
-	public void getEffort();
+	public int getEffort();
+
+	public void setName(String name);
+	public void setTime(int time);
+	public void setCost (double cost);
+	public void setEffort(int effort);
 }

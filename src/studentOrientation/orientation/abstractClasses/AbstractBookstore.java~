@@ -1,4 +1,0 @@
-//---------------------------------------------------------------------
-package studentOrientation.orientation.abstractClasses;
-//---------------------------------------------------------------------
-public abstract class AbstractBookstore implements ActivityInterface{}

@@ -1,22 +1,27 @@
 //---------------------------------------------------------------------
-package studentOrientation.orientation.concreteClasses;
+package studentOrientation.orientation.activities.bookstore;
 //---------------------------------------------------------------------
-import studentOrientation.orientation.abstractClasses.AbstractBookstore;
+import studentOrientation.orientation.interfaces.ActivityInterface;
 //---------------------------------------------------------------------
-public class MandoBooks extends AbstractBookstore
+public abstract class AbstractBookstore implements ActivityInterface
 {
-	private String name;
-	private int time;
-	private double cost;
-	private int effort;
+	static private final double BVALUE = 200;
+	String name;
+	int time;
+	double cost;
+	int effort;
 
-	//Constructor class sets values for the option
-	public MandoBooks(String name, int time, double cost, int effort)
+	/**
+	*	This method reads in a string percentage with a %
+	*	character terminating, and assigns a proper to cost
+	*	by calculating the cost based on the percentage.
+	**/
+	public void calculate(String percent)
 	{
-		this.name = name;
-		this.time = time;
-		this.cost = cost;
-		this.effort = effort;
+		//Parse the percent and extract the #
+		//Multiply BVALUE times the percentage
+		//Subtract the multiplication above from BVALUE
+		// and set cost to that value.
 	}
 
 	/**
@@ -75,16 +80,4 @@ public class MandoBooks extends AbstractBookstore
 	{
 		this.effort = effort;
 	}
-
-	/**
-	*	This is the overridden toString method for this class
-	*	@return Returns the class details as a string
-	**/
-	@Override
-	public String toString() 
-	{
-		return name +"- Time: "+ time +" Cost: "+ cost 
-			+" Calories: "+effort;
-	}
 }
-    

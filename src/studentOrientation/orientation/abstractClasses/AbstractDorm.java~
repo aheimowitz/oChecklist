@@ -1,4 +1,0 @@
-//---------------------------------------------------------------------
-package studentOrientation.orientation.abstractClasses;
-//---------------------------------------------------------------------
-public abstract class AbstractDorm implements ActivityInterface{}
